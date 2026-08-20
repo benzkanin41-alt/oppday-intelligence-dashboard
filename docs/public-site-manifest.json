@@ -1,7 +1,7 @@
 {
-  "snapshot_id": "2Q69-20260819T170540Z-10659d64-r2-0a92726152",
-  "last_updated_at": "2026-08-20T07:00:14Z",
-  "public_html_sha256": "00d527d8d7086f987b26b191f1f0765071c99106d7a83d98dda2b2a27ab432a2",
+  "snapshot_id": "2Q69-20260820T020950Z-1a638ac9-r3-17c09dc021",
+  "last_updated_at": "2026-08-20T07:01:36Z",
+  "public_html_sha256": "2c3ef4c26971db679abe71e5e9a7fd6961858afc56306a0b00909e559e20461a",
   "source_audit_panels_excluded": true,
   "internal_data_json_excluded": true
 }
