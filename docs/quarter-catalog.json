@@ -1,0 +1,40 @@
+{
+  "schema_version": "oppday-quarter-site-v1",
+  "default_quarter": "2Q69",
+  "selection_basis": "reporting_quarter_not_oppday_date",
+  "quarters": [
+    {
+      "quarter": "4Q69",
+      "year_be": 2569,
+      "quarter_number": 4,
+      "reporting_period_end": "2026-12-31",
+      "label": "4Q69 · สิ้นงบ 31 ธันวาคม 2569",
+      "status": "pending",
+      "path": "quarters/4Q69/index.html"
+    },
+    {
+      "quarter": "3Q69",
+      "year_be": 2569,
+      "quarter_number": 3,
+      "reporting_period_end": "2026-09-30",
+      "label": "3Q69 · สิ้นงบ 30 กันยายน 2569",
+      "status": "pending",
+      "path": "quarters/3Q69/index.html"
+    },
+    {
+      "quarter": "2Q69",
+      "year_be": 2569,
+      "quarter_number": 2,
+      "reporting_period_end": "2026-06-30",
+      "label": "2Q69 · สิ้นงบ 30 มิถุนายน 2569",
+      "status": "available",
+      "path": "quarters/2Q69/index.html",
+      "covered_count": 434,
+      "event_date_count": 29,
+      "latest_event_date": "2026-09-04",
+      "last_updated_at": "2026-09-07T16:59:29Z",
+      "top50_count": 50,
+      "industry_count": 30
+    }
+  ]
+}
