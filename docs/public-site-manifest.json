@@ -1,7 +1,7 @@
 {
   "snapshot_id": "2Q69-20260905T024158Z-1fece8c9-r1-6e4ad46d22",
   "last_updated_at": "2026-09-07T16:59:29Z",
-  "public_html_sha256": "1f5d4572b62baacce1ef62d494b93b8a80306b5392d2fda1ea58c4334be7c976",
+  "public_html_sha256": "fac466109e036ca0bcd2e18bb1b6963216268bd2868d500e026091fa6eb84b55",
   "source_audit_panels_excluded": true,
   "internal_data_json_excluded": true,
   "quarter_site_version": "oppday-quarter-site-v1",
@@ -10,6 +10,6 @@
   "quarter_html_sha256": {
     "quarters/4Q69/index.html": "c96bda6c03eed886fc73fad3a5839132b35e87f248c88f43c4986dd425fa2316",
     "quarters/3Q69/index.html": "98468339710417dd3bb883c8ef37728a37e6d48fdb7c3abdc68b947f30653fae",
-    "quarters/2Q69/index.html": "98db58ceb8f1cd39e3d7e1eee048fe96b6c84d907e1dd3ff1fc172a6effb62e0"
+    "quarters/2Q69/index.html": "4fa8d36534aa726c278ad3296a25ec9cfe25f898b260b2fe52bbd51822c0be6b"
   }
 }
