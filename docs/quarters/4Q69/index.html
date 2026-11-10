@@ -157,9 +157,15 @@ function restoreView(){showRankingView(location.hash.startsWith('#industry')?'in
 // A quarter change loads a separately validated static report. Never filter by call month.
 const quarterSelect=document.getElementById('reporting-quarter');
 const quarterRoot=quarterSelect.dataset.siteRoot;
+const displayedQuarter=document.documentElement.dataset.reportingQuarter;
 function quarterViewHash(){const active=document.querySelector('.ranking-tab[aria-selected="true"]');const view=active?active.dataset.rankingView:'';return view==='industry'?'#industry':view==='top30'?'#top50':'#top5';}
 function quarterDestination(q,keepHash){const target=new URL(quarterRoot+'quarters/'+encodeURIComponent(q)+'/index.html',location.href);target.hash=keepHash||quarterViewHash();return target.href;}
-quarterSelect.addEventListener('change',()=>{location.assign(quarterDestination(quarterSelect.value));});
+quarterSelect.addEventListener('change',()=>{
+  const destination=quarterDestination(quarterSelect.value);
+  // Back restores form state from the page we are leaving.
+  quarterSelect.value=displayedQuarter;
+  location.assign(destination);
+});
 const requestedQuarter=new URLSearchParams(location.search).get('quarter');
 if(requestedQuarter&&requestedQuarter!==quarterSelect.value){if(Array.from(quarterSelect.options).some(o=>o.value===requestedQuarter)){location.replace(quarterDestination(requestedQuarter,location.hash));}else{const notice=document.createElement('p');notice.setAttribute('role','status');notice.textContent='ยังไม่มีไตรมาสที่ระบุ แสดงไตรมาส '+quarterSelect.value;document.querySelector('.quarter-context').appendChild(notice);}}
 </script></body></html>
