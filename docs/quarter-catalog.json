@@ -29,12 +29,12 @@
       "label": "3Q69 · สิ้นงบ 30 กันยายน 2569",
       "status": "available",
       "path": "quarters/3Q69/index.html",
-      "covered_count": 23,
-      "event_date_count": 9,
-      "latest_event_date": "2026-11-10",
-      "last_updated_at": "2026-11-11T14:55:47Z",
-      "top50_count": 23,
-      "industry_count": 3
+      "covered_count": 28,
+      "event_date_count": 10,
+      "latest_event_date": "2026-11-11",
+      "last_updated_at": "2026-11-12T15:16:23Z",
+      "top50_count": 28,
+      "industry_count": 4
     },
     {
       "quarter": "2Q69",
