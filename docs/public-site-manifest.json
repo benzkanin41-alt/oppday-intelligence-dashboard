@@ -1,16 +1,16 @@
 {
-  "snapshot_id": "3Q69-md-3Q69-scheduled-20261117-92f272b341ea-r1-92f272b341",
-  "last_updated_at": "2026-11-18T03:31:32Z",
-  "public_html_sha256": "eca474b71dc2dc1fb36999f4a53373a139002cac236796cb18e0e4df9b7eb754",
+  "snapshot_id": "3Q69-md-3Q69-scheduled-20261119-52fe77c82813-r1-52fe77c828",
+  "last_updated_at": "2026-11-19T17:14:30Z",
+  "public_html_sha256": "cfe6fe190ac6c46ad7a394f40aa1dbabfc0e20f478c854ed10cb23379881030e",
   "source_audit_panels_excluded": true,
   "internal_data_json_excluded": true,
   "quarter_site_version": "oppday-quarter-site-v1",
   "default_quarter": "3Q69",
-  "quarter_catalog_sha256": "b026e5e9ac03a46dfaf1587a29d79f78608f173775396a9c356967c811115c5b",
+  "quarter_catalog_sha256": "fae7d548e569497fd7575572d497c581c7915016d7fe14fae022a78cb43c7e70",
   "quarter_html_sha256": {
-    "quarters/1Q70/index.html": "f3f2186cc605a8d58f804fcdee6b712ddc7b404ef703455be943261b0abdc0c0",
-    "quarters/4Q69/index.html": "e69bf0c54cbd697fffe4d26fc9d24f9e64293c76460020e052d42c795baf00ea",
-    "quarters/3Q69/index.html": "be7f816ff821f1f202f0bb0a170dbf6646d5f9a87b78522db7ae114cccc62642",
+    "quarters/1Q70/index.html": "1833eeec18be36d543ad2e449f17a9a9d8a3e81c5fd4a92875636eea6f59486b",
+    "quarters/4Q69/index.html": "939ec8d8674662d103250e03b5ccf20695af6c6abc7e9b67feeb4229107fea5b",
+    "quarters/3Q69/index.html": "50ffcc1474f57ad0bcfa905b931b1c72b8c27c71a418c3e09d9a42393a15a7f5",
     "quarters/2Q69/index.html": "8f7e2e53801856bc2237e830c3026412f8c588d3b1b148bcf344eec694467941"
   }
 }
