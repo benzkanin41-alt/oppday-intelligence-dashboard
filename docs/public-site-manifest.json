@@ -1,7 +1,7 @@
 {
   "snapshot_id": "3Q69-md-3Q69-md-manual-20261124-4c8c0ca732b6-r1-4c8c0ca732",
   "last_updated_at": "2026-11-24T12:57:55Z",
-  "public_html_sha256": "715aec54624a1b9fd4d13c02e099913b37acca6f8781019815389a741f24de22",
+  "public_html_sha256": "e418dc0aaf56ccdbde70bb2a4de2c608c5d242ea5be2cf556a01a645fa86b3d9",
   "source_audit_panels_excluded": true,
   "internal_data_json_excluded": true,
   "quarter_site_version": "oppday-quarter-site-v1",
@@ -10,7 +10,7 @@
   "quarter_html_sha256": {
     "quarters/1Q70/index.html": "1833eeec18be36d543ad2e449f17a9a9d8a3e81c5fd4a92875636eea6f59486b",
     "quarters/4Q69/index.html": "939ec8d8674662d103250e03b5ccf20695af6c6abc7e9b67feeb4229107fea5b",
-    "quarters/3Q69/index.html": "afab36ed4c810323b166c5097fa3b345341fbb6359627b1144787bd14b5ee711",
+    "quarters/3Q69/index.html": "1b3113b7ec5908f6e3624944932a13832333c15edd775b855b0bb5eafc495ff1",
     "quarters/2Q69/index.html": "8f7e2e53801856bc2237e830c3026412f8c588d3b1b148bcf344eec694467941"
   }
 }
