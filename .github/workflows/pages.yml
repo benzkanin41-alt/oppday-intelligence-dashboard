@@ -8,30 +8,54 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: docs
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - name: Wait for the Pages artifact
+        timeout-minutes: 2
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          endpoint="repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts"
+          for attempt in {1..12}; do
+            if count=$(gh api --method GET "$endpoint" -f name=github-pages --jq '.total_count'); then
+              case "$count" in
+                1) exit 0 ;;
+                0) ;;
+                *) echo "Expected one github-pages artifact, found $count" >&2; exit 1 ;;
+              esac
+            fi
+            sleep 5
+          done
+          echo 'Timed out waiting for the github-pages artifact' >&2
+          exit 1
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
